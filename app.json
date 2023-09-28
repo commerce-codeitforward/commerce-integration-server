@@ -1,0 +1,11 @@
+{
+  "name": "Commerce Cloud Integration Server",
+  "description": "This is a node js server used to mock integration for B2B / D2C Salesforce Commerce Cloud sites.",
+  "repository": "https://github.com/commerce-codeitforward/commerce-integration-server",
+  "environments": {
+    "review": {
+      "addons": []
+    },
+    "test": {}
+  }
+}
