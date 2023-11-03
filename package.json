@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "commerce-integration-server",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "An app that can be used as a commerce cloud integration server for b2b / d2c commerce cloud storefronts.",
   "engines": {
     "node": "10.x"
   },
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/commerce-codeitforward/commerce-integration-server"
   },
   "keywords": [
     "node",
