@@ -9,7 +9,7 @@
 ##### Disclaimer
 *This integration server is purely a reference application and should never be used in a production setting. This should be used for testing purposes or developing in lower instance before a real integration is setup.*
 
-##### Tax Integration
+### Tax Integration
 | Endpoints  | Inputs | Response |
 | ------------- | ------------- | ------------- | 
 | /get-tax-rates  | amountsBySKU  | ```{"SKU_1_september10-1568355297":{"taxAmount":2.8229012971048855,"taxRate":0.08,"taxName":"GST"},"SKU_0_september10-1568355296":{"taxAmount":5.0479003481482385,"taxRate":0.08,"taxName":"GST"}}``` | 
@@ -17,7 +17,7 @@
 | /get-tax-rates-with-adjustments  | amountsBySKU, country, state, taxType  | ```{"SKU_1_september10-1568355297":{"taxAmount":2.8229012971048855,"taxRate":0.08,"taxName":"GST"},"SKU_0_september10-1568355296":{"taxAmount":5.0479003481482385,"taxRate":0.08,"taxName":"GST"}}``` |
 | /get-tax-rates-with-adjustments-post | amountsBySKU, country, state, taxType  | ```{"SKU_1_september10-1568355297":{"taxAmount":2.8229012971048855,"taxRate":0.08,"taxName":"GST"},"SKU_0_september10-1568355296":{"taxAmount":5.0479003481482385,"taxRate":0.08,"taxName":"GST"}}``` | 
 
-##### Shipping
+### Shipping
 
 | Endpoints  | Inputs | Response |
 | ------------- | ------------- | ------------- | 
@@ -26,18 +26,18 @@
 | /calculate-shipping-rates-winter-21  | None  | ```[{ "status": "calculated", "rate": { "name" : "Delivery Method 1", "serviceName": "Test Carrier 1", "serviceCode": "SNC9600", "shipmentCost": 11.99, "otherCost": 5.99 } }, { "status": "calculated", "rate": { "name": "Delivery Method 2", "serviceName": "Test Carrier 2", "serviceCode": "SNC9600", "shipmentCost": 15.99, "otherCost": 6.99 } } ];``` |
 | /calculate-shipping-rates-winter-21-with-lang  | lang  | ```[{ "status": "calculated", "rate": { "name" : "Delivery Method 1", "serviceName": "Test Carrier 1", "serviceCode": "SNC9600", "shipmentCost": 11.99, "otherCost": 5.99 } }, { "status": "calculated", "rate": { "name": "Delivery Method 2", "serviceName": "Test Carrier 2", "serviceCode": "SNC9600", "shipmentCost": 15.99, "otherCost": 6.99 } } ];``` |
 
-##### Inventory
+### Inventory
 | Endpoints  | Inputs | Response |
 | ------------- | ------------- | ------------- | 
 | /get-inventory  | skus  | ```{"SKU-25-10028":9999.00, "SKU-25-10030":9999.00}``` |
 
-##### Sales Price  
+### Sales Price  
 | Endpoints  | Inputs | Response |
 | ------------- | ------------- | ------------- | 
 | /get-sales-prices  | skus  | ```{"SKU-25-10028":0.00, "SKU-25-10030":0.00, "SKU_FOR_TEST":100.00}``` | 
     
 
-#### Setup Steps
+## Setup Steps
 
 Deploy the App
 1. Click the 'Deploy to Heroku' button
@@ -53,5 +53,3 @@ Remote Site Settings:
     3. Disable Protocol Security: Unchecked
     4. Active: Checked
 4. Click the Save button
-
-Utilize the reference adapters within this repositor:
