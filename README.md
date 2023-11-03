@@ -1,17 +1,39 @@
-# commerce-integration-server
+# node-js-getting-started
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-<h3>Overview</h3>
-<p>Almost every commerce cloud project requires integrations, with Salesforce B2B Commerce that is no different. Up until recently Salesforce has provided a sample heroku server to mock the expected response to their sample adapters. With that sample heroku server being turned off in Sept of 2023, we've build this app for customers & partners alike.</p>
-<p>This app is build in NodeJs and is designed to mock responses back to your stores for the integrations in checkout. </p>
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-Current Integrations
-<ol>
-<li>Inventory</li>
+## Running Locally
 
-Future Integrations
-<ol>
-<li>Tax</li>
-<li>Shipping</li>
-</ol>
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+
+```sh
+$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
+```
+
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
+```
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)

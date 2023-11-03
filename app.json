@@ -1,11 +1,8 @@
 {
-  "name": "Commerce Cloud Integration Server",
-  "description": "This is a node js server used to mock integration for B2B / D2C Salesforce Commerce Cloud sites.",
-  "repository": "https://github.com/commerce-codeitforward/commerce-integration-server",
-  "environments": {
-    "review": {
-      "addons": []
-    },
-    "test": {}
-  }
+  "name": "Start on Heroku: Node.js",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
 }
